@@ -1,0 +1,155 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Google-aligned resume rewrite preserving original data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt, a4paper]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{needspace}
+
+% --- PAGE LAYOUT ---
+\geometry{
+    a4paper,
+    left=0.75in,
+    right=0.75in,
+    top=0.75in,
+    bottom=0.75in
+}
+
+% --- HYPERLINK SETUP ---
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=black,
+    pdftitle={Debarun Lahiri - Resume},
+    pdfauthor={Debarun Lahiri},
+}
+
+% --- SECTION FORMATTING ---
+\titleformat{name=\section, numberless}{\Large\bfseries\scshape\raggedright}{}{0em}{\Needspace{5\baselineskip}}[\titlerule]
+\titlespacing*{name=\section, numberless}{0pt}{1.5ex}{1ex}
+
+% --- DOCUMENT START ---
+\begin{document}
+
+% --- HEADER ---
+\begin{center}
+    {\Huge \scshape Debarun Lahiri}
+    \vspace{1ex}
+
+    \href{mailto:debarunlahiri2016@gmail.com}{debarunlahiri2016@gmail.com} \quad\textbar\quad
+    \href{https://debarunlahiri-web.vercel.app/}{debarunlahiri.lambrk.com} \quad\textbar\quad
+    Noida, UP, India \quad\textbar\quad
+    +91-9205225428
+\end{center}
+
+% --- PROFESSIONAL SUMMARY ---
+\section*{Professional Summary}
+Software Engineer with 6+ years of experience building Android, full-stack, and backend applications using Java and Kotlin. Experienced in designing, developing, testing, debugging, and maintaining mobile apps, APIs, web portals, and real-time systems across manufacturing, payments, training, and on-demand platforms. Strong hands-on experience with Android development, Kotlin, Spring Boot, microservices, Firebase, Oracle SQL, and modern web technologies, with a track record of collaborating across teams to deliver reliable software solutions.
+
+% --- KEY SKILLS ---
+\section*{Key Skills}
+\begin{itemize}[leftmargin=*, label={}, itemsep=0.25ex]
+    \item \textbf{Programming Languages:} Java, Kotlin
+    \item \textbf{Mobile Development:} Android (Java and Kotlin), React Native, Ionic
+    \item \textbf{Web Development:} Angular, React, NextJs, Javascript, HTML, CSS
+    \item \textbf{Backend Development:} Spring Boot, RESTful APIs, Microservices, Kafka
+    \item \textbf{Cloud, Tools \& AI:} Firebase, ML Kit, Google Cloud, Jetpack Compose, AWS
+    \item \textbf{Databases:} Oracle SQL, PostgreSQL, MySQL, RoomDB
+    \item \textbf{Soft Skills:} Leadership, Agile Methodologies, Problem Solving
+\end{itemize}
+
+% --- EXPERIENCE ---
+\section*{Experience}
+\begin{itemize}[leftmargin=0pt, itemsep=1ex, topsep=0.5ex, partopsep=0pt]
+
+    \item
+    \textbf{Samsung Display Noida} \hfill \textbf{Noida, UP, India} \\
+    \textit{Senior Assistant Engineer} \hfill \textit{Dec 2022 -- Present}
+    \begin{itemize}[leftmargin=1.5em, itemsep=0.5ex, topsep=0.5ex]
+        \item Led the development of an OCR system using ML Kit to automate data extraction and reduce manual work.
+        \item Designed and developed a web portal focused on improving usability, layout, and navigation for a smoother user experience.
+        \item Worked on building an NLP-based chatbot to handle user queries and provide real-time assistance.
+        \item Collaborated with cross-functional teams including engineers and product managers to support and improve manufacturing processes.
+    \end{itemize}
+
+    \item
+    \textbf{TraqIQ} \hfill \textbf{Noida, UP, India} \\
+    \textit{Software Engineer} \hfill \textit{Nov 2021 -- Dec 2022}
+    \begin{itemize}[leftmargin=1.5em, itemsep=0.5ex, topsep=0.5ex]
+        \item Integrated Paytm Payment Gateway into Spring Boot applications to enable secure and seamless payment processing.
+        \item Developed dynamic and responsive user interfaces with a focus on performance using lazy loading and asynchronous data fetching.
+        \item Built a cross-platform hybrid mobile application using React Native, ensuring smooth functionality across both iOS and Android.
+    \end{itemize}
+
+    \item
+    \textbf{Bnext IT Solutions} \hfill \textbf{Noida, UP, India} \\
+    \textit{Android Developer} \hfill \textit{May 2021 -- Nov 2021}
+    \begin{itemize}[leftmargin=1.5em, itemsep=0.5ex, topsep=0.5ex]
+        \item Improved mobile app performance by identifying and fixing issues through testing and debugging.
+        \item Integrated OneSignal for push notifications and implemented Google Play payment gateway for handling in-app transactions.
+    \end{itemize}
+
+    \item
+    \textbf{Grepix Infotech Private Limited} \hfill \textbf{Noida, UP, India} \\
+    \textit{Android Developer} \hfill \textit{Jan 2020 -- Feb 2021}
+    \begin{itemize}[leftmargin=1.5em, itemsep=0.5ex, topsep=0.5ex]
+        \item Developed responsive mobile and tablet applications with a focus on usability across different devices.
+        \item Integrated Google Maps APIs to enable location-based features such as navigation and tracking.
+    \end{itemize}
+
+\end{itemize}
+
+\newpage
+
+% --- PROJECTS ---
+\section*{Projects}
+\begin{itemize}[leftmargin=1.5em, itemsep=0.75ex, topsep=0.5ex, label=\textbullet]
+
+    \item \textbf{Vani AI - Speech-To-Text:} Built an offline speech-to-text mobile application that allows users to speak into the device. Handled audio processing in Python with automatic language detection and translation support. Developed supporting APIs and a web interface to access recordings and translations locally. (\textit{Tech Stack: Kotlin, Android, Python, Node.js, JavaScript})
+
+    \item \textbf{OTR - Operator Training Records:} Designed and developed an Android application to manage operator training records and compliance. Focused on usability improvements based on user feedback. (\textit{Tech Stack: Java, Kotlin, Spring Boot, Angular})
+
+    \item \textbf{Chat Bot:} Developed a chatbot with NLP capabilities to handle user queries and provide automated responses. Improved conversational flow through testing and feedback. (\textit{Tech Stack: Java, Android, Kotlin, NLP, Spring Boot, Oracle SQL})
+
+    \item \textbf{Motion Tracking:} Built an application to track movement of equipment on the production line and generate data for analysis. Provided access through mobile and monitoring portal. (\textit{Tech Stack: Java, Android, Firebase, OpenCV, Spring Boot})
+
+    \item \textbf{e-VIS (Violation Information System):} Developed an Android application to manage and track operator violations across different departments. Enabled efficient recording and reporting of violations. (\textit{Tech Stack: Kotlin, Java, Spring MVC, Node.js, Oracle SQL})
+
+    \item \textbf{LMS - Learning Management System:} Worked with a team to build a Learning Management System for managing training and skills. Contributed to features including course management, assessments, and progress tracking. (\textit{Tech Stack: Spring Boot, Java, Oracle SQL, Angular, RxJS, Microservices, AWS, Kafka})
+
+    \item \textbf{HireMe Driver \& Rider:} Developed a cab booking application for riders and drivers. Worked on backend APIs and real-time features. (\textit{Tech Stack: Java, Kotlin, Android, Firebase, Google Maps API, WebSockets})
+
+    \item \textbf{TraqPayments:} Built a payment and collection system with customer communication features. Worked on backend APIs and a web portal for transaction management. (\textit{Tech Stack: Java, Android, Kotlin, Angular, Spring Boot, MySQL})
+
+    \item \textbf{PictureTime \& Filamchi:} Worked on the development and maintenance of mobile applications with a focus on performance and backend improvements. (\textit{Tech Stack: React Native, Java, Firebase, Microservices, Spring Boot, iOS})
+
+    \item \textbf{Masala Dish (Customer, Driver \& Restaurant Manager):} Developed a food delivery application supporting customers, drivers, and restaurant managers. Worked on backend APIs and web portal development. (\textit{Tech Stack: Kotlin, Microservices, Spring Boot})
+
+    \item \textbf{OnDemand Services:} Built an on-demand services application with real-time communication between users and service providers. Worked on backend APIs and web portal development. (\textit{Tech Stack: Java, Kotlin, Firebase, WebSockets, Angular, Spring Boot})
+
+\end{itemize}
+
+% --- EDUCATION ---
+\section*{Education}
+\begin{itemize}[leftmargin=0pt, itemsep=1ex, topsep=0.5ex, partopsep=0pt]
+    \item
+    \textbf{Institute of Management and Studies, Ghaziabad} \hfill \textbf{Ghaziabad, India} \\
+    \textit{Bachelor of Computer Applications (BCA)} \hfill \textit{2016 -- 2019}
+
+    \item
+    \textbf{D.D.M. Public School} \hfill \textbf{Ghaziabad, India} \\
+    \textit{Class 12th (C.B.S.E. Board)} \hfill \textit{2015}
+
+    \item
+    \textbf{D.D.M. Public School} \hfill \textbf{Ghaziabad, India} \\
+    \textit{Class 10th (C.B.S.E. Board)} \hfill \textit{2013}
+\end{itemize}
+
+\end{document}
